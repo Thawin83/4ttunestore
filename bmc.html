@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Model Canvas</title>
+
+<style>
+/* Global */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    background:#f9f9f9;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:#ffffff;
+    padding:15px 0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    border-bottom:2px solid #f1f1f1;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#ff6a00;
+    text-decoration:none;
+    font-weight:600;
+    font-size:16px;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    transform:scale(1.1);
+}
+
+nav a.active{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    transform:scale(1.05);
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:0 0 25px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.header h1{
+    margin:0;
+    font-size:42px;
+}
+
+.header p{
+    font-size:18px;
+    margin-top:10px;
+    opacity:0.9;
+}
+
+/* Section Grid */
+.section{
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* Card */
+.card{
+    background:#ffffff;
+    padding:25px 20px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    color:#ff6a00;
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+.card ul{
+    padding-left:18px;
+    line-height:1.6;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .header h1{
+        font-size:32px;
+    }
+    .header p{
+        font-size:16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">🏠 หน้าแรก</a>
+  <a href="org.html">👔 โครงสร้างองค์กร</a>
+  <a href="layout.html">🏢 แผงผังบริษัท</a>
+  <a href="bmc.html" class="active">📊 Business Model</a>
+  <a href="erp.html">💻 ERP</a>
+  <a href="finance.html">💰 การเงิน</a>
+  <a href="crm.html">📋 CRM</a>
+  <a href="pdca.html">🔄 PDCA</a>
+  <a href="pos.html">👕 POS / Designer</a>
+</nav>
+
+<div class="header">
+    <h1>Business Model Canvas</h1>
+    <p>แบรนด์เสื้อผ้าแฟชั่น (Own Brand)</p>
+</div>
+
+<div class="section">
+
+<!-- Key Partnerships -->
+<div class="card">
+<h3>🤝 Key Partnerships</h3>
+<ul>
+<li>โรงงานผลิตเสื้อผ้า</li>
+<li>โรงงานสกรีน / ปักลาย</li>
+<li>ซัพพลายเออร์ผ้า</li>
+<li>บริษัทขนส่ง</li>
+<li>อินฟลูเอนเซอร์</li>
+</ul>
+</div>
+
+<!-- Key Activities -->
+<div class="card">
+<h3>⚙️ Key Activities</h3>
+<ul>
+<li>ออกแบบเสื้อผ้า</li>
+<li>ออกแบบแพ็กเกจ</li>
+<li>ควบคุมการผลิต</li>
+<li>ทำการตลาดออนไลน์</li>
+<li>ขายและจัดส่งสินค้า</li>
+</ul>
+</div>
+
+<!-- Key Resources -->
+<div class="card">
+<h3>🧠 Key Resources</h3>
+<ul>
+<li>ทีมงานและดีไซเนอร์</li>
+<li>ลิขสิทธิ์งานออกแบบ</li>
+<li>คอมพิวเตอร์/โปรแกรม</li>
+<li>วัตถุดิบ</li>
+<li>ช่องทางออนไลน์</li>
+</ul>
+</div>
+
+<!-- Value Propositions -->
+<div class="card">
+<h3>💎 Value Propositions</h3>
+<ul>
+<li>ดีไซน์เฉพาะ มีเอกลักษณ์</li>
+<li>คุณภาพดี ใส่สบาย</li>
+<li>แพ็กเกจสวย ทันสมัย</li>
+<li>Custom Design ได้</li>
+</ul>
+</div>
+
+<!-- Customer Relationships -->
+<div class="card">
+<h3>❤️ Customer Relationships</h3>
+<ul>
+<li>สื่อสารผ่านโซเชียล</li>
+<li>ตอบแชทเป็นกันเอง</li>
+<li>โปรสำหรับลูกค้าประจำ</li>
+<li>รับ Feedback ลูกค้า</li>
+</ul>
+</div>
+
+<!-- Channels -->
+<div class="card">
+<h3>📦 Channels</h3>
+<ul>
+<li>Instagram / Facebook / TikTok</li>
+<li>Shopee / Lazada</li>
+<li>เว็บไซต์</li>
+<li>งานอีเวนต์</li>
+</ul>
+</div>
+
+<!-- Customer Segments -->
+<div class="card">
+<h3>🎯 Customer Segments</h3>
+<ul>
+<li>วัยรุ่น–วัยทำงาน</li>
+<li>คนชอบแฟชั่น</li>
+<li>ลูกค้าต้องการไม่ซ้ำ</li>
+<li>ลูกค้า Custom</li>
+</ul>
+</div>
+
+<!-- Cost Structure -->
+<div class="card">
+<h3>💸 Cost Structure</h3>
+<ul>
+<li>ต้นทุนการผลิต</li>
+<li>ค่าแรงพนักงาน</li>
+<li>ค่าออกแบบ</li>
+<li>ค่าโฆษณา</li>
+<li>ค่าขนส่ง</li>
+</ul>
+</div>
+
+<!-- Revenue Streams -->
+<div class="card">
+<h3>💰 Revenue Streams</h3>
+<ul>
+<li>ขายเสื้อผ้า</li>
+<li>งาน Custom</li>
+<li>Limited Edition</li>
+</ul>
+</div>
+
+</div> <!-- section -->
+
+</body>
+</html>

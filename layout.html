@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แผงผังบริษัท</title>
+
+<style>
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    background:#f9f9f9;
+    color:#333;
+}
+
+/* Navbar */
+nav {
+    background: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 2px solid #f1f1f1;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ff6a00;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background: linear-gradient(135deg, #ff6a00, #ff914d);
+    transform: scale(1.1);
+}
+
+nav a.active {
+    background: linear-gradient(135deg, #ff6a00, #ff914d);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:0 0 25px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.header h1{
+    margin:0;
+    font-size:42px;
+}
+
+.header p{
+    font-size:18px;
+    margin-top:10px;
+    opacity:0.9;
+}
+
+/* Section & Card */
+section{
+    padding:40px 20px;
+}
+
+.card{
+    background:#ffffff;
+    padding:25px 30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card h2{
+    color:#ff6a00;
+    margin-bottom:15px;
+}
+
+/* Room list */
+.room{
+    margin-bottom:20px;
+    padding-left:15px;
+    border-left:4px solid #ff6a00;
+    transition:0.3s;
+}
+
+.room:hover{
+    background: #fff8f0;
+    border-left-color:#ff914d;
+    padding-left:20px;
+    border-radius:8px;
+}
+
+.room h3{
+    color:#ff6a00;
+    margin-bottom:8px;
+}
+
+/* Image row */
+.image-row{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.image-box{
+    flex:1;
+    min-width:250px;
+    max-width:400px;          /* จำกัดความกว้าง */
+    aspect-ratio: 4/3;        /* กำหนดอัตราส่วน 4:3 */
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;          /* ครอบคลุมพื้นที่โดยไม่บิดรูป */
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.image-box:hover img{
+    transform: scale(1.05);   /* zoom เล็กน้อยตอน hover */
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .header h1{
+        font-size:32px;
+    }
+    .header p{
+        font-size:16px;
+    }
+    .image-box{
+        min-width:150px;
+        aspect-ratio: 4/3;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">🏠 หน้าแรก</a>
+  <a href="org.html">👔 โครงสร้างองค์กร</a>
+  <a href="layout.html" class="active">🏢 แผงผังบริษัท</a>
+  <a href="bmc.html">📊 Business Model</a>
+  <a href="erp.html">💻 ERP</a>
+  <a href="finance.html">💰 การเงิน</a>
+  <a href="crm.html">📋 CRM</a>
+  <a href="pdca.html">🔄 PDCA</a>
+  <a href="pos.html">👕 POS / Designer</a>
+</nav>
+
+<div class="header">
+<h1>แผงผังบริษัท</h1>
+<p>Company Layout - โฟร์ทูนสโตร์</p>
+</div>
+
+<section>
+
+<div class="card">
+
+<!-- ห้องต่าง ๆ -->
+<div class="room">
+<h3>1. ห้องผู้บริหาร (CEO Office)</h3>
+<ul>
+<li>วางแผนกลยุทธ์ธุรกิจ</li>
+<li>ประชุมระดับผู้บริหาร</li>
+<li>ตัดสินใจด้านการเงินและทิศทางแบรนด์</li>
+</ul>
+</div>
+
+<div class="room">
+<h3>2. ห้องออกแบบ (Design Room)</h3>
+<ul>
+<li>ออกแบบลวดลายเสื้อผ้า</li>
+<li>ทำงานกราฟิก แพทเทิร์น</li>
+<li>คิดคอลเลกชันใหม่</li>
+</ul>
+</div>
+
+<div class="room">
+<h3>3. ห้องผลิตและ QC</h3>
+<ul>
+<li>ตัดเย็บเสื้อผ้า</li>
+<li>ตรวจสอบคุณภาพสินค้า</li>
+<li>แก้ไขงานก่อนขาย</li>
+</ul>
+</div>
+
+<div class="room">
+<h3>4. ห้องคลังสินค้า</h3>
+<ul>
+<li>จัดเก็บสินค้าแยกตามรุ่น สี และไซซ์</li>
+<li>ตรวจนับสต็อก</li>
+</ul>
+</div>
+
+<div class="room">
+<h3>5. ห้องแพ็กสินค้าและจัดส่ง</h3>
+<ul>
+<li>แพ็กสินค้าใส่กล่องหรือถุง</li>
+<li>เตรียมเอกสารจัดส่ง</li>
+<li>ส่งให้บริษัทขนส่ง</li>
+</ul>
+</div>
+
+<div class="room">
+<h3>6. ห้องขายและการตลาด</h3>
+<ul>
+<li>ดูแล Shopee / Lazada / TikTok / IG / FB</li>
+<li>วางแผนโฆษณาและโปรโมชัน</li>
+<li>ติดต่อประสานงานกับลูกค้า</li>
+</ul>
+</div>
+
+<div class="room">
+<h3>7. ห้องประชุม</h3>
+<ul>
+<li>ประชุมทีมงาน</li>
+<li>วางแผนคอลเลกชันใหม่</li>
+<li>สรุปยอดขาย</li>
+</ul>
+</div>
+
+<div class="room">
+<h3>8. ห้องธุรการ / การเงิน</h3>
+<ul>
+<li>ดูแลเอกสารบริษัท</li>
+<li>คำนวณเงินเดือน</li>
+<li>บัญชี รายรับ–รายจ่าย และภาษี</li>
+</ul>
+</div>
+
+<div class="room">
+<h3>9. ห้องน้ำ</h3>
+<ul>
+<li>รองรับพนักงานและผู้มาติดต่อ</li>
+<li>เข้าถึงง่าย ไม่รบกวนพื้นที่ทำงาน</li>
+</ul>
+</div>
+
+<div class="room">
+<h3>10. ที่จอดรถ</h3>
+<ul>
+<li>รองรับ 3–5 คัน</li>
+<li>อยู่ด้านหน้า/ด้านข้างอาคาร</li>
+</ul>
+</div>
+
+</div>
+
+<!-- รูปด้านล่าง -->   
+<div class="card">
+<h2>แผนผังบริษัท (ภาพ)</h2>
+
+<div class="image-row">
+    <div class="image-box">
+        <img src="1.jpg" alt="แผนผัง 1">
+    </div>
+    <div class="image-box">
+        <img src="2.jpg" alt="แผนผัง 2">
+    </div>
+</div>
+</div>
+
+</section>
+
+</body>
+</html>

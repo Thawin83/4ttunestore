@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDCA</title>
+<style>
+/* Global */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    background:#f9f9f9;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:#ffffff;
+    padding:15px 0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    border-bottom:2px solid #f1f1f1;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#ff6a00;
+    text-decoration:none;
+    font-weight:600;
+    font-size:16px;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    transform:scale(1.1);
+}
+
+nav a.active{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    transform:scale(1.05);
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:0 0 25px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.header h1{
+    margin:0;
+    font-size:42px;
+}
+
+.header p{
+    font-size:18px;
+    margin-top:10px;
+    opacity:0.9;
+}
+
+/* Section Grid */
+.section{
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* Card */
+.card{
+    background:#ffffff;
+    padding:25px 20px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    color:#ff6a00;
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.card ul{
+    padding-left:18px;
+    line-height:1.6;
+}
+
+.card b{
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-size:16px;
+    color:#ff914d;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .header h1{
+        font-size:32px;
+    }
+    .header p{
+        font-size:16px;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">🏠 หน้าแรก</a>
+  <a href="org.html">👔 โครงสร้างองค์กร</a>
+  <a href="layout.html">🏢 แผงผังบริษัท</a>
+  <a href="bmc.html">📊 Business Model</a>
+  <a href="erp.html">💻 ERP</a>
+  <a href="finance.html">💰 การเงิน</a>
+  <a href="crm.html">📋 CRM</a>
+  <a href="pdca.html" class="active">🔄 PDCA</a>
+  <a href="pos.html">👕 POS / Designer</a>
+</nav>
+
+<div class="header">
+<h1>Promotion + PDCA</h1>
+<p>วิเคราะห์และปรับปรุงโปรโมชั่นโดยใช้ PDCA</p>
+</div>
+
+<div class="section">
+<div class="card">
+<h3>📝 Plan - วางแผน</h3>
+<ul>
+<li>วิเคราะห์กลุ่มเป้าหมาย (นักเรียน/นักศึกษา, บุคคลทั่วไป)</li>
+<li>กำหนดรูปแบบโปรโมชั่น เช่น ลดราคา, ซื้อ 2 แถม 1, ของแถมพิเศษ</li>
+<li>กำหนดระยะเวลาโปรโมชั่น</li>
+<li>ตั้งเป้ายอดขาย เช่น เพิ่มขึ้น 20%</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>⚡ Do - ปฏิบัติ</h3>
+<ul>
+<li>ดำเนินการโปรโมชั่นตามแผน</li>
+<li>ประชาสัมพันธ์ผ่าน Facebook, Line, Instagram</li>
+<li>จัดทำสื่อโฆษณา เช่น โปสเตอร์, โพสต์ออนไลน์</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🔍 Check - ตรวจสอบ</h3>
+<ul>
+<li>ตรวจสอบยอดขายระหว่างและหลังโปรโมชั่น</li>
+<li>เปรียบเทียบยอดขายก่อนและหลัง</li>
+<li>เก็บความคิดเห็นลูกค้าเพื่อนำมาวิเคราะห์</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🔧 Act - ปรับปรุงพัฒนา</h3>
+<ul>
+<li>นำผลประเมินปรับปรุงโปรโมชั่นครั้งต่อไป</li>
+<li>พัฒนารูปแบบกิจกรรมให้ตรงความต้องการลูกค้า</li>
+<li>วางแผนกิจกรรมใหม่ที่มีประสิทธิภาพกว่าเดิม</li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>

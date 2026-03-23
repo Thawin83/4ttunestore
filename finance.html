@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>การเงิน</title>
+
+<style>
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    background:#ffffff;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:#ffffff;
+    padding:15px 30px;
+    display:flex;
+    gap:25px;
+    border-bottom:2px solid #f1f1f1;
+}
+
+nav a{
+    color:#ff6a00;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    padding:50px;
+    text-align:center;
+}
+
+/* Section */
+.section{
+    padding:30px;
+}
+
+/* Summary Box */
+.summary{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.box{
+    flex:1;
+    padding:20px;
+    border-radius:15px;
+    color:white;
+    text-align:center;
+}
+
+.income{ background:#22c55e; }
+.expense{ background:#ef4444; }
+.profit{ background:#3b82f6; }
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:30px;
+}
+
+th,td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+th{
+    background:#ff6a00;
+    color:white;
+}
+
+tr:hover{
+    background:#f9f9f9;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">🏠 หน้าแรก</a>
+  <a href="org.html">👔 โครงสร้างองค์กร</a>
+  <a href="layout.html">🏢 แผงผังบริษัท</a>
+  <a href="bmc.html">📊 Business Model</a>
+  <a href="erp.html">💻 ERP</a>
+  <a href="finance.html" class="active">💰 การเงิน</a>
+  <a href="crm.html">📋 CRM</a>
+  <a href="pdca.html">🔄 PDCA</a>
+  <a href="pos.html">👕 POS / Designer</a>
+</nav>
+
+<style>
+/* Navbar */
+nav {
+    background: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; /* จัดตรงกลาง */
+    gap: 30px;               /* ระยะห่างระหว่างลิงก์ */
+    border-bottom: 2px solid #f1f1f1;
+    flex-wrap: wrap;         /* รองรับหน้าจอเล็ก */
+}
+
+nav a {
+    color: #ff6a00;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background: linear-gradient(135deg, #ff6a00, #ff914d);
+    transform: scale(1.1);
+}
+
+nav a.active {
+    background: linear-gradient(135deg, #ff6a00, #ff914d);
+    color: white;
+    transform: scale(1.05);
+}
+</style>
+
+<div class="header">
+<h1>การเงิน</h1>
+<p>Financial Overview - โฟร์ทูนสโตร์</p>
+</div>
+
+<div class="section">
+
+<!-- Summary -->
+<div class="summary">
+<div class="box income">
+<h2>รายรับ</h2>
+<p>600,000 บาท / เดือน</p>
+</div>
+
+<div class="box expense">
+<h2>รายจ่าย</h2>
+<p>458,000 บาท / เดือน</p>
+</div>
+
+<div class="box profit">
+<h2>กำไรสุทธิ</h2>
+<p>142,000 บาท / เดือน</p>
+</div>
+</div>
+
+<!-- รายรับ -->
+<h2>📊 รายรับ</h2>
+<table>
+<tr>
+<th>รายการ</th>
+<th>ต่อเดือน</th>
+<th>ต่อปี</th>
+</tr>
+
+<tr><td>ขายหน้าร้าน</td><td>220,000</td><td>2,640,000</td></tr>
+<tr><td>ขายออนไลน์</td><td>300,000</td><td>3,600,000</td></tr>
+<tr><td>ออเดอร์พิเศษ</td><td>80,000</td><td>960,000</td></tr>
+<tr><td>รายได้อื่นๆ</td><td>20,000</td><td>240,000</td></tr>
+
+<tr>
+<th>รวม</th>
+<th>600,000</th>
+<th>7,440,000</th>
+</tr>
+</table>
+
+<!-- รายจ่าย -->
+<h2>💸 รายจ่าย</h2>
+<table>
+<tr>
+<th>รายการ</th>
+<th>ต่อเดือน</th>
+<th>ต่อปี</th>
+</tr>
+
+<tr><td>ต้นทุนการผลิต</td><td>180,000</td><td>2,160,000</td></tr>
+<tr><td>ค่าเช่า</td><td>15,000</td><td>180,000</td></tr>
+<tr><td>ค่าน้ำ/ไฟ/เน็ต</td><td>7,000</td><td>84,000</td></tr>
+<tr><td>การตลาด</td><td>8,000</td><td>96,000</td></tr>
+<tr><td>ระบบ POS</td><td>1,000</td><td>12,000</td></tr>
+<tr><td>อื่นๆ</td><td>1,000</td><td>12,000</td></tr>
+<tr><td>เงินเดือน CEO</td><td>55,000</td><td>660,000</td></tr>
+<tr><td>ดีไซเนอร์</td><td>44,000</td><td>528,000</td></tr>
+<tr><td>ผลิต/QC</td><td>60,000</td><td>720,000</td></tr>
+<tr><td>ขาย/การตลาด</td><td>54,000</td><td>648,000</td></tr>
+<tr><td>แพ็กสินค้า</td><td>13,000</td><td>156,000</td></tr>
+<tr><td>บัญชี</td><td>20,000</td><td>240,000</td></tr>
+
+<tr>
+<th>รวม</th>
+<th>458,000</th>
+<th>5,496,000</th>
+</tr>
+</table>
+
+<!-- กำไร -->
+<h2>💰 ผลประกอบการ</h2>
+<table>
+<tr>
+<th>รายการ</th>
+<th>ต่อเดือน</th>
+<th>ต่อปี</th>
+</tr>
+
+<tr>
+<td>กำไรสุทธิ</td>
+<td>142,000</td>
+<td>1,944,000</td>
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>

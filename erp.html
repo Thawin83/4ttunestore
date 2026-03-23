@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ระบบ ERP / IT</title>
+
+<style>
+/* Global */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    background:#f9f9f9;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:#ffffff;
+    padding:15px 0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    border-bottom:2px solid #f1f1f1;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#ff6a00;
+    text-decoration:none;
+    font-weight:600;
+    font-size:16px;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    transform:scale(1.1);
+}
+
+nav a.active{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    transform:scale(1.05);
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:0 0 25px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.header h1{
+    margin:0;
+    font-size:42px;
+}
+
+.header p{
+    font-size:18px;
+    margin-top:10px;
+    opacity:0.9;
+}
+
+/* Section Grid */
+.section{
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* Card */
+.card{
+    background:#ffffff;
+    padding:25px 20px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    color:#ff6a00;
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.card ul{
+    padding-left:18px;
+    line-height:1.6;
+}
+
+.card b{
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-size:16px;
+    color:#ff914d;
+}
+
+.sub{
+    margin-top:10px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .header h1{
+        font-size:32px;
+    }
+    .header p{
+        font-size:16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">🏠 หน้าแรก</a>
+  <a href="org.html">👔 โครงสร้างองค์กร</a>
+  <a href="layout.html">🏢 แผงผังบริษัท</a>
+  <a href="bmc.html">📊 Business Model</a>
+  <a href="erp.html" class="active">💻 ERP</a>
+  <a href="finance.html">💰 การเงิน</a>
+  <a href="crm.html">📋 CRM</a>
+  <a href="pdca.html">🔄 PDCA</a>
+  <a href="pos.html">👕 POS / Designer</a>
+</nav>
+
+<div class="header">
+    <h1>ระบบ ERP / IT</h1>
+    <p>ระบบสารสนเทศภายในองค์กร</p>
+</div>
+
+<div class="section">
+
+<div class="card">
+<h3>🧩 ERP System</h3>
+<b>หน้าที่หลัก</b>
+<ul>
+<li>รวมข้อมูลทุกฝ่ายไว้ในระบบเดียว</li>
+<li>เชื่อมงาน ซื้อ–ขาย–ผลิต–คลัง–บัญชี</li>
+<li>ลดงานซ้ำซ้อน</li>
+</ul>
+<b class="sub">ประโยชน์</b>
+<ul>
+<li>ข้อมูลเรียลไทม์ ถูกต้อง</li>
+<li>เห็นภาพรวมธุรกิจ</li>
+<li>ตัดสินใจได้เร็ว</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📦 Procurement</h3>
+<b>หน้าที่หลัก</b>
+<ul>
+<li>จัดการสั่งซื้อวัตถุดิบ</li>
+<li>เปรียบเทียบ Supplier</li>
+<li>ควบคุมต้นทุน</li>
+</ul>
+<b class="sub">ประโยชน์</b>
+<ul>
+<li>ลดต้นทุน</li>
+<li>ไม่ขาดสต็อก</li>
+<li>ตรวจสอบย้อนหลังได้</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🛒 POS System</h3>
+<b>หน้าที่หลัก</b>
+<ul>
+<li>บันทึกการขายหน้าร้าน</li>
+<li>ออกใบเสร็จ</li>
+<li>เช็กสต็อกอัตโนมัติ</li>
+</ul>
+<b class="sub">ประโยชน์</b>
+<ul>
+<li>ขายเร็วขึ้น</li>
+<li>รู้ยอดขายทันที</li>
+<li>เชื่อมคลังและบัญชี</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>💰 Accounting</h3>
+<b>หน้าที่หลัก</b>
+<ul>
+<li>บันทึกรายรับ–รายจ่าย</li>
+<li>ทำงบการเงิน</li>
+<li>ควบคุมกระแสเงินสด</li>
+</ul>
+<b class="sub">ประโยชน์</b>
+<ul>
+<li>ข้อมูลโปร่งใส</li>
+<li>ลดความซับซ้อน</li>
+<li>วางแผนการเงินได้</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📊 Sales Management</h3>
+<b>หน้าที่หลัก</b>
+<ul>
+<li>ติดตามยอดขาย</li>
+<li>บริหารลูกค้า (CRM)</li>
+<li>วิเคราะห์แนวโน้ม</li>
+</ul>
+<b class="sub">ประโยชน์</b>
+<ul>
+<li>เพิ่มยอดขาย</li>
+<li>วางแผนโปรได้แม่น</li>
+<li>รู้สินค้าขายดี</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>

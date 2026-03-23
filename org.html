@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>โครงสร้างองค์กร</title>
+
+<style>
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    background:#f9f9f9;
+    color:#333;
+}
+
+/* Navbar */
+nav {
+    background: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; /* จัดตรงกลาง */
+    gap: 30px;               /* ระยะห่างระหว่างลิงก์ */
+    border-bottom: 2px solid #f1f1f1;
+    flex-wrap: wrap;         /* รองรับหน้าจอเล็ก */
+}
+
+nav a {
+    color: #ff6a00;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background: linear-gradient(135deg, #ff6a00, #ff914d);
+    transform: scale(1.1);
+}
+
+nav a.active {
+    background: linear-gradient(135deg, #ff6a00, #ff914d);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:0 0 25px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.header h1{
+    margin:0;
+    font-size:42px;
+}
+
+.header p{
+    font-size:18px;
+    margin-top:10px;
+    opacity:0.9;
+}
+
+/* Section & Card */
+section{
+    padding:40px 20px;
+}
+
+.card{
+    background:#ffffff;
+    padding:25px 30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card h2{
+    color:#ff6a00;
+    margin-bottom:15px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    font-size:15px;
+}
+
+th{
+    background:#ff6a00;
+    color:white;
+    padding:12px;
+    border-radius:8px 8px 0 0;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+tr:hover{
+    background:#fff3e6;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    table{
+        font-size:13px;
+    }
+    .header h1{
+        font-size:32px;
+    }
+    .header p{
+        font-size:16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">🏠 หน้าแรก</a>
+  <a href="org.html" class="active">👔 โครงสร้างองค์กร</a>
+  <a href="layout.html">🏢 แผงผังบริษัท</a>
+  <a href="bmc.html">📊 Business Model</a>
+  <a href="erp.html">💻 ERP</a>
+  <a href="finance.html">💰 การเงิน</a>
+  <a href="crm.html">📋 CRM</a>
+  <a href="pdca.html">🔄 PDCA</a>
+  <a href="pos.html">👕 POS / Designer</a>
+</nav>
+
+<div class="header">
+<h1>โครงสร้างองค์กร</h1>
+<p>Company Structure - โฟร์ทูนสโตร์</p>
+</div>
+
+<section>
+
+<div class="card">
+<h2>จำนวนพนักงาน</h2>
+<ul>
+<li>CEO / เจ้าของกิจการ : 1 คน</li>
+<li>พนักงานออกแบบ : 2 คน</li>
+<li>พนักงานผลิต : 4 คน</li>
+<li>พนักงานขาย : 3 คน</li>
+<li>พนักงานแพ็กสินค้า : 1 คน</li>
+<li>พนักงานบัญชี : 1 คน</li>
+<li><b>รวมทั้งหมด : 12 คน</b></li>
+</ul>
+</div>
+
+<div class="card">
+<h2>รายละเอียดโครงสร้างองค์กร</h2>
+
+<table>
+<tr>
+<th>ตำแหน่ง</th>
+<th>จำนวน</th>
+<th>ชม./วัน</th>
+<th>วัน/เดือน</th>
+<th>ค่าแรง/วัน</th>
+<th>ค่าแรง/เดือน</th>
+<th>ค่าแรง/ชม.</th>
+</tr>
+
+<tr>
+<td>CEO</td>
+<td>1</td>
+<td>8</td>
+<td>22</td>
+<td>-</td>
+<td>55,000</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>พนักงานออกแบบ</td>
+<td>2</td>
+<td>8</td>
+<td>22</td>
+<td>1,000</td>
+<td>22,000</td>
+<td>125</td>
+</tr>
+
+<tr>
+<td>พนักงานผลิต</td>
+<td>4</td>
+<td>8</td>
+<td>22</td>
+<td>682</td>
+<td>15,000</td>
+<td>85</td>
+</tr>
+
+<tr>
+<td>พนักงานขาย</td>
+<td>3</td>
+<td>8</td>
+<td>22</td>
+<td>818</td>
+<td>18,000</td>
+<td>102</td>
+</tr>
+
+<tr>
+<td>พนักงานแพ็กสินค้า</td>
+<td>1</td>
+<td>8</td>
+<td>22</td>
+<td>591</td>
+<td>13,000</td>
+<td>74</td>
+</tr>
+
+<tr>
+<td>พนักงานบัญชี</td>
+<td>1</td>
+<td>8</td>
+<td>22</td>
+<td>-</td>
+<td>20,000</td>
+<td>114</td>
+</tr>
+
+<tr>
+<th colspan="5">รวม</th>
+<th colspan="2">246,000 บาท / เดือน</th>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+</body>
+</html>

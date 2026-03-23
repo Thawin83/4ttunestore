@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRM</title>
+
+<style>
+/* Global */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    background:#f9f9f9;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:#ffffff;
+    padding:15px 0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    border-bottom:2px solid #f1f1f1;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#ff6a00;
+    text-decoration:none;
+    font-weight:600;
+    font-size:16px;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    transform:scale(1.1);
+}
+
+nav a.active{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    transform:scale(1.05);
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:0 0 25px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.header h1{
+    margin:0;
+    font-size:42px;
+}
+
+.header p{
+    font-size:18px;
+    margin-top:10px;
+    opacity:0.9;
+}
+
+/* Section Grid */
+.section{
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* Card */
+.card{
+    background:#ffffff;
+    padding:25px 20px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    color:#ff6a00;
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.card ul{
+    padding-left:18px;
+    line-height:1.6;
+}
+
+.card b{
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-size:16px;
+    color:#ff914d;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .header h1{
+        font-size:32px;
+    }
+    .header p{
+        font-size:16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">🏠 หน้าแรก</a>
+  <a href="org.html">👔 โครงสร้างองค์กร</a>
+  <a href="layout.html">🏢 แผงผังบริษัท</a>
+  <a href="bmc.html">📊 Business Model</a>
+  <a href="erp.html">💻 ERP</a>
+  <a href="finance.html">💰 การเงิน</a>
+  <a href="crm.html" class="active">📋 CRM</a>
+  <a href="pdca.html">🔄 PDCA</a>
+  <a href="pos.html">👕 POS / Designer</a>
+</nav>
+
+<div class="header">
+    <h1>CRM (Customer Relationship Management)</h1>
+    <p>ระบบบริหารความสัมพันธ์ลูกค้า</p>
+</div>
+
+<div class="section">
+
+<div class="card">
+<h3>👥 Customer Management</h3>
+<b>หน้าที่หลัก</b>
+<ul>
+<li>เก็บข้อมูลลูกค้า (ชื่อ / เบอร์โทร)</li>
+<li>แบ่งประเภท: ลูกค้าใหม่ / ประจำ / VIP / องค์กร</li>
+<li>แสดงยอดซื้อและจำนวนครั้ง</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🎁 Promotion</h3>
+<b>ตัวอย่างโปรโมชั่น</b>
+<ul>
+<li>ลูกค้าใหม่ ลด 15%</li>
+<li>สะสมแต้ม: 500 บาท = 1 แต้ม</li>
+<li>ครบ 10 แต้ม ลด 200 บาท</li>
+<li>ซื้อ 1000 ลด 100</li>
+<li>Flash Sale ลดสูงสุด 30%</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📞 Customer Activity</h3>
+<ul>
+<li>ส่ง SMS โปรโมชั่น</li>
+<li>ติดตามออเดอร์</li>
+<li>ส่ง Thank You Card</li>
+<li>โทรสอบถาม Feedback</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📢 Marketing</h3>
+<ul>
+<li>ส่งโปรโมชั่นผ่าน LINE / SMS</li>
+<li>แจ้ง Flash Sale</li>
+<li>โปรโมทสินค้าใหม่</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📊 Dashboard</h3>
+<ul>
+<li>จำนวนลูกค้าทั้งหมด</li>
+<li>ลูกค้า VIP</li>
+<li>ยอดขายรวม</li>
+<li>ลูกค้าใหม่</li>
+<li>โปรโมชั่นยอดนิยม</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>

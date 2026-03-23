@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>โฟร์ทูนสโตร์</title>
+
+<style>
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    background:#ffffff;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:#ffffff;
+    padding:15px 30px;
+    display:flex;
+    gap:25px;
+    border-bottom:2px solid #f1f1f1;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#ff6a00;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+    padding: 8px 12px;
+    border-radius:8px;
+}
+
+nav a:hover{
+    color:white;
+    background: linear-gradient(135deg,#ff6a00,#ff914d);
+    transform: scale(1.1);
+}
+
+nav a.active{
+    background: linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(135deg,#ff6a00,#ff914d);
+    color:white;
+    padding:60px 40px;
+    text-align:center;
+    border-radius:0 0 25px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hero img{
+    width:120px;
+    height:auto;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero h1{
+    margin:10px 0 5px 0;
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* Content */
+section{
+    padding:40px;
+}
+
+/* Card */
+.card{
+    background:#ffffff;
+    padding:25px;
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#ff6a00;
+}
+
+/* Button */
+.btn{
+    background:#ff6a00;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ff8c42;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .hero h1{
+        font-size:28px;
+    }
+    .hero img{
+        width:80px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html" class="active">🏠 หน้าแรก</a>
+  <a href="org.html">👔 โครงสร้างองค์กร</a>
+  <a href="layout.html">🏢 แผงผังบริษัท</a>
+  <a href="bmc.html">📊 Business Model</a>
+  <a href="erp.html">💻 ERP</a>
+  <a href="finance.html">💰 การเงิน</a>
+  <a href="crm.html">📋 CRM</a>
+  <a href="pdca.html">🔄 PDCA</a>
+  <a href="pos.html">👕 POS / Designer</a>
+</nav>
+
+<div class="hero">
+    <!-- ใส่โลโก้ตรงนี้ -->
+    <img src="H.jpg" alt="โลโก้โฟร์ทูนสโตร์">
+    <h1>บริษัท โฟร์ทูนสโตร์ จำกัด</h1>
+    <p>แฟชั่นที่ใช่ ในสไตล์ของคุณ</p>
+</div>
+
+<section>
+
+<div class="card">
+<h2>เกี่ยวกับธุรกิจ</h2>
+<p>
+ธุรกิจแบรนด์เสื้อผ้าแฟชั่น ออกแบบและจำหน่ายเสื้อผ้าในสไตล์ของตัวเอง 
+โดยเน้นดีไซน์ที่ทันสมัย ใส่ได้ในชีวิตประจำวัน และมีเอกลักษณ์ของแบรนด์
+</p>
+</div>
+
+<div class="card">
+<h2>สินค้า / บริการ</h2>
+<ul>
+<li>เสื้อยืด เสื้อเชิ้ต ฮู้ดดี้</li>
+<li>ออกแบบลายเสื้อ</li>
+<li>รับ Custom Design</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>รายได้หลัก</h2>
+<ul>
+<li>การขายเสื้อผ้า (เสื้อยืด เสื้อเชิ้ต ฮู้ดดี้)</li>
+<li>การออกแบบลายเสื้อและแพ็กเกจ</li>
+<li>การรับออเดอร์พิเศษ (Custom Design)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>ข้อมูลธุรกิจ</h2>
+<ul>
+<li>จำนวนพนักงาน: 12 คน</li>
+<li>รายได้ต่อเดือน: 600,000 บาท</li>
+<li>กำไรต่อเดือน: 142,000 บาท</li>
+</ul>
+</div>
+
+</section>
+
+</body>
+</html>
